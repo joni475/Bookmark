@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container__hidden">
+      <div class="container">
+        <header>
+          <nav class="nav">
+            <ul class="nav__lists">
+              <li class="nav__logo">
+                <img src="images/logo-bookmark.svg" alt="" />
+              </li>
+              <li class="nav-list">
+                <a href="#"><p>features</p></a>
+              </li>
+              <li class="nav-list">
+                <a href="#"><p>pricing</p></a>
+              </li>
+              <li class="nav-list">
+                <a href="#"><p>contact</p></a>
+              </li>
+              <li class="nav-list login">
+                <a href="#"><p>login</p></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="hamburger__icon">
+            <div class="mobile__logo">
+              <a href="#">
+                <img src="images/logo-bookmark.svg" alt="" />
+              </a>
+            </div>
+            <div class="bars">
+              <div class="bar1 bar"></div>
+              <div class="bar2 bar"></div>
+              <div class="bar3 bar"></div>
+            </div>
+          </div>
+
+          <ul class="mobile__menu open is-hidden">
+            <li class="nav-list">
+              <a href="#">features</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">pricing</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">contact</a>
+            </li>
+            <li class="login__border">
+              <a href="#">login</a>
+            </li>
+            <li class="logo__lists">
+              <img src="images/icon-facebook.svg" alt="">
+              <img src="images/icon-twitter.svg" alt="">
+            </li>
+          </ul>
+        </header>
+
+        <div class="main__contents">
+          <!--MAIN CONTENTS-->
+
+          <div class="main__content-one">
+            <div class="main__content-img">
+              <a href="#"><img src="images/illustration-hero.svg" alt="" /></a>
+            </div>
+            <div class="main__content-one-content">
+              <div class="main__content-one-head">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>
+                  A clean and simple interface to organize your favourite
+                  websites. Open a new browser tab and see your site load
+                  instantly. Try it for free.
+                </p>
+              </div>
+
+              <div class="main__content-button">
+                <button class="main__button">
+                  <p>Get it on Chrome</p>
+                </button>
+                <button class="main__button">
+                  <p>Get it on firefox</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__content-two">
+            <div class="main__content-two-head">
+              <p class="main__content-p">Features</p>
+              <p>
+                Our aim is to make and easy for you to access your favourite
+                websites. your Bookmarks sync between your devices so you can
+                access them on the go.
+              </p>
+            </div>
+
+            <div class="main__content-two-tabby">
+              <div class="main__content-two-tabby-buttons">
+                <button class="tab is-select" data-target="tab1">
+                  <p>Simple Bookmarking</p>
+                </button>
+                <button class="tab" data-target="tab2">
+                  <p>Speedy Searching</p>
+                </button>
+                <button class="tab" data-target="tab3">
+                  <p>Easy Sharing</p>
+                </button>
+              </div>
+
+              <div class="tabby__contents">
+                <div class="tab-content is-selected jsTabContent" id="tab1">
+                  <div class="tabby__content1-img tabby__contents-img">
+                    <img src="images/illustration-features-tab-1.svg" alt="" />
+                  </div>
+                  <div class="tabby__content1-para tabby__content-para">
+                    <p class="main__content-p">Bookmark in one click</p>
+                    <p>
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <button class="tabby__content-btn">
+                      <p>More Info</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-content jsTabContent" id="tab2" hidden>
+                  <div class="tabby__content2-img tabby__contents-img">
+                    <img src="images/illustration-features-tab-2.svg" alt="" />
+                  </div>
+                  <div class="tabby__content2-para tabby__content-para">
+                    <p class="main__content-p">Intelligent search</p>
+                    <p>
+                      Our powerful search feature will help you find saved sites
+                      in no time at all. No need to trawl through all of your
+                      bookmarks.
+                    </p>
+                    <button class="tabby__content-btn">
+                      <p>More Info</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-content jsTabContent" id="tab3" hidden>
+                  <div class="tabby__content3-img tabby__contents-img">
+                    <img src="images/illustration-features-tab-3.svg" alt="" />
+                  </div>
+                  <div class="tabby__content3-para tabby__content-para">
+                    <p class="main__content-p">Share your bookmarks</p>
+                    <p>
+                      Easily share your bookmarks and collections with others.
+                      Create a shareable link that you can send at the click of
+                      a button.
+                    </p>
+                    <button class="tabby__content-btn">
+                      <p>More Info</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__contents-three">
+            <div class="main__contents-three-head">
+              <p class="main__content-p">Download the extension</p>
+              <p>
+                We've got more browsers in the pipeline. Please do let us know
+                if you've got a favourite you'd like us to prioritize.
+              </p>
+            </div>
+            <div class="extensions">
+              <div class="extension__chrome">
+                <a href="#" class="extension__img">
+                  <img src="images/logo-chrome.svg" alt="" />
+                </a>
+                <p class="extension__img-desc">Add to Chrome</p>
+                <p class="extension__version">Minimum version 62</p>
+                <span class="extension__dot">
+                  <img src="images/bg-dots.svg" alt="" />
+                </span>
+                <button>
+                  <p>Add & Install Extension</p>
+                </button>
+              </div>
+              <div class="extension__firefox">
+                <a href="#" class="extension__img">
+                  <img src="images/logo-firefox.svg" alt="" />
+                </a>
+                <p class="extension__img-desc">Add to Firefox</p>
+                <p class="extension__version">Minimum version 55</p>
+                <span class="extension__dot">
+                  <img src="images/bg-dots.svg" alt="" />
+                </span>
+                <button>
+                  <p>Add & Install Extension</p>
+                </button>
+              </div>
+              <div class="extension__opera">
+                <a href="#" class="extension__img">
+                  <img src="images/logo-opera.svg" alt="" />
+                </a>
+                <p class="extension__img-desc">Add to Opera</p>
+                <p class="extension__version">Minimum version 46</p>
+                <span class="extension__dot">
+                  <img src="images/bg-dots.svg" alt="" />
+                </span>
+                <button>
+                  <p>Add & Install Extension</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main__contents-four">
+            <div class="main__contents-four-head">
+              <p class="main__content-p">Frequently Asked Questions</p>
+              <p>
+                Here are some of our FAQs. If you have any other questions you'd
+                like answered please feel free to email us.
+              </p>
+            </div>
+            <div class="main__contents-four-accordion">
+              <!--Accordion starts here-->
+              <div class="contents__four-faq">
+                <div class="faq__one faq__border accordion">
+                  <button class="faq__head">
+                    <p>What is Bookmark?</p>
+                    <span class="open"
+                      ><img class="opens" src="images/icon-arrow.svg" alt=""
+                    /></span>
+                  </button>
+                  <div class="faq__content">
+                    <div class="faq__inner">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi, praesentium. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Ut suscipit in illum
+                        dignissimos magnam temporibus! Modi, odio ea alias eos
+                        voluptate quibusdam nemo ut. Rerum nihil reiciendis
+                        laboriosam necessitatibus cum, distinctio facere,
+                        similique laudantium asperiores maxime explicabo quas
+                        porro earum vero eveniet suscipit consequatur quo. Saepe
+                        ipsam maxime incidunt repudiandae officia, natus ducimus
+                        veniam harum sequi exercitationem modi laborum corporis
+                        at neque minus mollitia et cum iste dolores molestiae
+                        autem eveniet. Ipsam quibusdam ratione impedit!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__two faq__border accordion">
+                  <button class="faq__head">
+                    <p>How can I request a new browser?</p>
+                    <span class="open"
+                      ><img class="opens" src="images/icon-arrow.svg" alt=""
+                    /></span>
+                  </button>
+                  <div class="faq__content">
+                    <div class="faq__inner">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Minima, id. Ullam ducimus iure, facere ipsa alias
+                        corporis enim laborum omnis Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Modi quas provident hic
+                        consequuntur a ullam similique, officiis, assumenda
+                        aspernatur soluta quis nobis tempore delectus amet nisi
+                        itaque cupiditate deleniti obcaecati id! Fugiat quaerat
+                        molestiae dolores perspiciatis veritatis nisi aut
+                        eveniet sit eius quasi. Deserunt rem numquam dicta
+                        beatae cupiditate optio officiis ullam nobis assumenda
+                        soluta officia quos architecto possimus, laudantium
+                        enim, ipsum similique repellat veniam impedit facere.
+                        Deserunt repellat quaerat, nobis velit officia
+                        asperiores optio neque mollitia doloribus eveniet, vitae
+                        atque nemo quos. A, deleniti nemo. Veritatis iusto
+                        autem, temporibus officiis velit suscipit praesentium
+                        facere magnam, ea architecto reiciendis quas!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__three faq__border accordion">
+                  <button class="faq__head">
+                    <p>Is there a mobile app?</p>
+                    <span class="open"
+                      ><img class="opens" src="images/icon-arrow.svg" alt=""
+                    /></span>
+                  </button>
+                  <div class="faq__content">
+                    <div class="faq__inner">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi, praesentium. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Eos temporibus nihil autem
+                        atque numquam aspernatur, earum esse commodi soluta
+                        sequi expedita, magni dicta et odio nemo in ea delectus
+                        hic. Maxime, repellat voluptatum ullam eos deserunt
+                        accusantium voluptates fugit perferendis. Magni,
+                        perferendis. Suscipit quasi aut amet deleniti excepturi
+                        qui quam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__four faq__border accordion">
+                  <button class="faq__head">
+                    <p>What about other chromium browsers?</p>
+                    <span class="open"
+                      ><img class="opens" src="images/icon-arrow.svg" alt=""
+                    /></span>
+                  </button>
+                  <div class="faq__content">
+                    <div class="faq__inner">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Est nam sunt voluptates nemo repellendus? Facere
+                        laboriosam, est animi qui, consequuntur deserunt
+                        nesciunt obcaecati deleniti nisi cum accusamus sed
+                        itaque. Quae.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__last-btn">
+                  <button><p>More Info</p></button>
+                </div>
+              </div>
+            </div>
+            <!--Accordion ends here-->
+          </div>
+        </div>
+        <!--MAIN CONTENTS ENDS-->
+      </div>
+      <!--container ends here-->
+    </div>
+    <article class="article">
+      <div class="article__head">
+        <p>35,000+ already joined</p>
+        <h3>Stay up-to-date with what we're doing</h3>
+        <form action="#" class="form">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            placeholder="   Enter your email address"
+          />
+        </form>
+        <input type="submit" form="submit" value="Contact Us" />
+      </div>
+    </article>
+
+    <footer>
+      <div class="footer__container">
+        <ul class="footer__link">
+          <li class="footer__logo">
+            <a href="#"><img src="images/logo-bookmark.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><p>features</p></a>
+          </li>
+          <li>
+            <a href="#"><p>pricing</p></a>
+          </li>
+          <li>
+            <a href="#"><p>contact</p></a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-facebook">
+            <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+          </li>
+          <li class="footer__social-twitter">
+            <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
